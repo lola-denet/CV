@@ -11,213 +11,235 @@
 </head>
 
 <body>
-<a name="Haut"></a>
-<header>
-    <h3>Accès Rapides : </h3>
-    <a href="#Info_perso">Informations personnelles et contact</a><br>
-    <a href="#Parcours_academique">Parcours académique</a><br>
-    <a href="#Exp_pro">Expériences professionnelles et stages</a><br>
-    <a href="#Comp_info">Compétences informatiques</a><br>
-    <a href="#Langues">Langues</a><br>
-    <a href="#Activites">Autres Activités, aptitudes</a><br>
-    <a href="#Bas">Bas de page</a>
-</header><br><br>
+
+    <a id="Haut"></a>
+    <header>
+        <h3>Accès Rapides : </h3>
+        <a href="#Info_perso">Informations personnelles et contact</a><br>
+        <a href="#Parcours_academique">Parcours académique</a><br>
+        <a href="#Exp_pro">Expériences professionnelles et stages</a><br>
+        <a href="#Comp_info">Compétences informatiques</a><br>
+        <a href="#Langues">Langues</a><br>
+        <a href="#Activites">Autres Activités, aptitudes</a><br>
+        <a href="#Bas">Bas de page</a>
+    </header><br><br>
 
     <img class="photo"
         src="Photo_LolaDenet.jpg" 
         alt="Photo d'identité"
     /><br><br>
 
-<h1>Lola Denet</h1>
+    <h1>Lola Denet</h1>
 
-    <a name="Info_perso"></a>
-    <h2>Informations personnelles et contact</h2>
+        <a id="Info_perso"></a>
+        <h2>Informations personnelles et contact
+            <button onclick="aff_masq('div1')">+/-</button>
+        </h2>
+            <div id="div1">
+                <ul>
+                    <li><span class="perso">Situation actuelle </span>: Etudiante en Master de Bio-Informatique</li>
+                    <li><span class="perso">Date de naissance </span>: 12 Juillet 1993</li>
+                    <li><span class="perso">Lieu d'habitation </span>: Pessac (33600)</li>
+                </ul>
+                <form class="contact">
+                    <input class="bouton" type="button" value="Me Contacter par e-mail" 
+                        onclick="window.location.href='mailto:denet.lola@gmail.com'"
+                    />
+                </form><br>
+            </div>
+            <a class="haut" href="#Haut">Haut de page</a>
+
+        <a id="Parcours_academique"></a>
+        <h2>Parcours académique
+            <button onclick="aff_masq('div2')">+/-</button>
+        </h2>
+            <div id="div2">
+                <p>
+                    <span class="date"> Septembre 2019 : </span> 
+                    Reprise d'études en 
+                        <a href="https://master-bioinfo-bordeaux.github.io/?fbclid=IwAR106PSM_dQjaGU755saNukLNx0DxDwaeX8VTOcCqeQlJCefMVzYUzImYc4">
+                            Master 1 de Bio-Informatique 
+                        </a> <br> 
+                    <span class="precision">
+                        Parcours : Biologie Computationnelle, Option : Web Avancé et 
+                        Modélisation des Processus Dynamiques, en cours.
+                    </span>
+                    <span class="employeur">
+                        <a href="https://www.u-bordeaux.fr">Université de Bordeaux</a>
+                    </span>
+                </p>
+                <p>
+                    <span class="date"> Juillet 2014 : </span> 
+                    Diplôme d'Etat d'Infirmière (Grade Licence) <br> 
+                    <span class="precision">
+                        Travail de Fin d'Etudes : Harmonisation des pratiques professionnelles dans la 
+                        prévention de la douleur chez le nouveau-né.
+                    </span>
+                    <span class="employeur">Institut de Formation en Soins Infirmiers, Villeneuve-Sur-Lot (47300)</span>
+                </p>
+                <p>
+                    <span class="date"> Juin 2011 : </span> 
+                    Baccalauréat Scientifique <br> 
+                    <span class="precision">Spécialité Sciences et Vie de la Terre, Mention Assez Bien.</span>
+                    <span class="employeur">Lycée Maine de Biran, Bergerac (24100)</span>
+                </p>
+            </div>
+            <a class="haut" href="#Haut">Haut de page</a>
+
+        <a id="Exp_pro"></a>
+        <h2>Expériences professionnelles et stages
+            <button onclick="aff_masq('div3')">+/-</button>
+        </h2>
+            <div id="div3">
+            <h3>Emplois</h3>
+                    <p>
+                        <span class="date">Août 2019 : </span><br>
+                        Infirmière DE vacataire
+                        <span class="contrat">Contrats à Durée Déterminée</span>
+                        <span class="precision">Missions intérimaires dans des structures sanitaires et médico-sociales</span>
+                        <span class="employeur">Appel Médical, Périgueux (24000)</span>
+                    </p>
+                    <p>
+                        <span class="date">Janvier 2019 - Août 2019 : </span><br>
+                        Infirmière DE en Unité d'Hospitalisation pour Adolescent (UHA)<br>
+                        <span class="contrat">Contrat à durée Indéterminée</span> <br>
+                        <span class="precision">Formation interne sur la prise en charge des psychopathologies</span> <br>
+                        <span class="employeur">Centre Hospitalier Spécialisé de Vauclaire, Bergerac (24100)</span>
+                    </p>
+                    <p>
+                        <span class="date">Juillet 2014 - Janvier 2019 : </span><br>
+                        Infirmière DE en soins de suite et de réadaptation (SSR) et <br>
+                        Remplacements en tant que faisant fonction cadre de santé <br>
+                        <span class="contrat">Contrat à Durée Indéterminée</span>
+                        <span class="precision">
+                            Référente SSR lors de la certification de l'établissement par 
+                            l'Agence Régionale de la Santé (2016), Formation interne en raisonnement clinique,
+                            Formation Coloplast sur les soins de stomie, Formation qualifiante sur le tutorat d'étudiants. 
+                        </span>
+                        <span class="employeur">Clinique Pasteur, rue du professeur Pozzi, Bergerac (24100)</span>
+                    </p>
+                    <p>
+                        <span class="date"> Novembre 2009 - Novembre 2010 : </span><br> 
+                        Hôtesse de caisse <br> 
+                        <span class="contrat">Contrat Etudiant</span> <br>
+                        <span class="precision">Caisse et rayons dans la grande distribution</span> <br> 
+                        <span class="employeur">Intermarché, route de Ste Alvère, Bergerac (24100)</span>
+                    </p>            
+
+            <h3>Stages</h3>
+                    <p>
+                        <span class="date"> 2011 - 2014 : </span><br> 
+                        Stages de soins infirmiers<br> 
+                        <span class="precision">
+                            Chirurgie viscérale, Etablissement d'Hébergement pour Personnes Agées Dépendantes,
+                            Maternité, Libéral, Hopital de Jour de pédopsychiatrie, Structure Multiaccueil de 
+                            la petite enfance, Médecine pneumologie/rhumatologie, Soins de Suite et de Réadaptation. 
+                        </span> <br> 
+                        <span class="employeur">Etablissements sanitaires, sociaux, médicaux-sociaux, publics et privés.</span>
+                    </p>  
+            </div>
+            <a class="haut" href="#Haut">Haut de page</a>
+
+        <a id="Comp_info"></a>
+        <h2>Compétences informatiques
+            <button onclick="aff_masq('div4')">+/-</button>
+        </h2>
+            <div id="div4">
+            <h3>Langages de programmation</h3>
+                    <ul class="langages">
+                        <li>Shell Bash, Nzh</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>R</li>
+                        <li>LaTeX</li>
+                    </ul>
+            <h3>Outils, environnements</h3>
+                    <ul>
+                        <li>Systèmes d'exploitation :<span class="divers"> MacOS, Linux, Windows</span></li>
+                        <li>Editeurs de Texte : <span class="divers">Visual Studio Code, Emacs, Sublime Text</span></li>
+                        <li>Traitement d'images : <span class="divers">ImageJ</span></li>
+                        <li>Traitement de données : <span class="divers">R-Studio</span></li>
+                        <li>Traitement de texte et tableurs : <span class="divers">Microsoft Office, Libre Office</span></li>
+                    </ul>
+            </div>
+            <a class="haut" href="#Haut">Haut de page</a>
+
+        <a id="Langues"></a>        
+        <h2>Langues
+            <button onclick="aff_masq('div5')">+/-</button>
+        </h2>
+            <div class="div_langue" id="div5">
+                <img class="logoFr"
+                    src="francais.png" 
+                    alt="Drapeau Français"
+                />
+                <span  class="langue">Français : <br>langue maternelle</span><br><br>
+                <img class="logoEn"
+                    src="anglais.png" 
+                    alt="Drapeau Anglais"
+                />
+                <span class="langue">Anglais : Niveau B2</span><br><br>
+                <img class="logoSp"
+                    src="espagnol.png" 
+                    alt="Drapeau Espagnol"
+                />
+                <span class="langue">Espagnol : Niveau A2</span><br><br>    
+            </div>
+            <a class="haut" href="#Haut">Haut de page</a>
+
+        <a id="Activites"></a>
+        <h2>Autres activités, aptitudes
+            <button onclick="aff_masq('div6')">+/-</button>
+        </h2>
+            <div id="div6">
+                <ul>
+                    <li>Permis B</li>
+                    <li>Vente à domicile : <span class="divers">Parfumerie</span></li>
+                    <li>Méditation</li>
+                    <li>Loisirs: <span class="divers">Cuisine, Lecture, Jeux Vidéo</span></li>
+                    <li>Sports: <span class="divers">Marche, Pilates, Fitness</span></li>
+                </ul>
+            </div><br>
+            
+    <div>
+        <form>
+            <input class="impression" type="button" onclick="imprimer_page()" value="Imprimer le CV"/>
+        </form>
+    </div><br>
+
+    <a class="haut" href="#Haut">Haut de page</a><br>
+
+    <a id="Bas"></a>
+    <footer>
         <div>
-            <ul>
-                <li>Situation actuelle : Etudiante en Master de Bio-Informatique</li>
-                <li>Date de naissance: 12 Juillet 1993</li>
-                <li>Lieu d'habitation: Pessac (33600)</li>
-            </ul>
+            Code réalisé selon les recommandations et validé par W3C<br>
+            <span class="dateW3C">le 20 Février 2020</span><br>
+            En ligne : <a href="https://validator.w3.org" target="blank">Site Web W3C</a><br>
+            Tous droits réservés.<br><br>
             <form class="contact">
-                <input type="button" value="Me Contacter par e-mail" 
+                <input class="bouton" type="button" value="Me Contacter par e-mail" 
                     onclick="window.location.href='mailto:denet.lola@gmail.com'"
                 />
             </form><br>
         </div>
-        <a class="haut" href="#Haut">Haut de page</a>
+    </footer>
 
-    <a name="Parcours_academique"></a>
-    <h2>Parcours académique</h2>
-        <div>
-            <p>
-                <span class="date"> Septembre 2019 : </span> 
-                Reprise d'études en 
-                    <a href="https://master-bioinfo-bordeaux.github.io/?fbclid=IwAR106PSM_dQjaGU755saNukLNx0DxDwaeX8VTOcCqeQlJCefMVzYUzImYc4">
-                        Master 1 de Bio-Informatique 
-                    </a> <br> 
-                <span class="precision">
-                    Parcours : Biologie Computationnelle, Option : Web Avancé et 
-                    Modélisation des Processus Dynamiques, en cours.
-                </span>
-                <span class="employeur">
-                    <a href="https://www.u-bordeaux.fr">Université de Bordeaux</a>
-                </span>
-            </p>
-            <p>
-                <span class="date"> Juillet 2014 : </span> 
-                Diplôme d'Etat d'Infirmière (Grade Licence) <br> 
-                <span class="precision">
-                    Travail de Fin d'Etudes : Harmonisation des pratiques professionnelles dans la 
-                    prévention de la douleur chez le nouveau-né.
-                </span>
-                <span class="employeur">Institut de Formation en Soins Infirmiers, Villeneuve-Sur-Lot (47300)</span>
-            </p>
-            <p>
-                <span class="date"> Juin 2011 : </span> 
-                Baccalauréat Scientifique <br> 
-                <span class="precision">Spécialité Sciences et Vie de la Terre, Mention Assez Bien.</span>
-                <span class="employeur">Lycée Maine de Biran, Bergerac (24100)</span>
-            </p>
-        </div>
-        <a class="haut" href="#Haut">Haut de page</a>
-
-    <a name="Exp_pro"></a>
-    <h2>Expériences professionnelles et stages</h2>
-        <h3>Emplois</h3>
-            <div>
-                <p>
-                    <span class="date">Août 2019 : </span>
-                    Infirmière DE vacataire
-                    <span class="contrat">Contrats à Durée Déterminée</span>
-                    <span class="precision">Missions intérimaires dans des structures sanitaires et médico-sociales</span>
-                    <span class="employeur">Appel Médical, Périgueux (24000)</span>
-                </p>
-                <p>
-                    <span class="date">Janvier 2019 - Août 2019 : </span>
-                    Infirmière DE en Unité d'Hospitalisation pour Adolescent (UHA)<br>
-                    <span class="contrat">Contrat à durée Indéterminée</span> <br>
-                    <span class="precision">Formation interne sur la prise en charge des psychopathologies</span> <br>
-                    <span class="employeur">Centre Hospitalier Spécialisé de Vauclaire, Bergerac (24100)</span>
-                </p>
-                <p>
-                    <span class="date">Juillet 2014 - Janvier 2019 : </span>
-                    Infirmière DE en soins de suite et de réadaptation (SSR) et
-                    Remplacements en tant que faisant fonction cadre de santé <br>
-                    <span class="contrat">Contrat à Durée Indéterminée</span>
-                    <span class="precision">
-                        Référente SSR lors de la certification de l'établissement par 
-                        l'Agence Régionale de la Santé (2016), Formation interne en raisonnement clinique,
-                        Formation Coloplast sur les soins de stomie, Formation qualifiante sur le tutorat d'étudiants. 
-                    </span>
-                    <span class="employeur">Clinique Pasteur, rue du professeur Pozzi, Bergerac (24100)</span>
-                </p>
-                <p>
-                    <span class="date"> Novembre 2009 - Novembre 2010 : </span> 
-                    Hôtesse de caisse <br> 
-                    <span class="contrat">Contrat Etudiant</span> <br>
-                    <span class="precision">Caisse et rayons dans la grande distribution</span> <br> 
-                    <span class="employeur">Intermarché, route de Ste Alvère, Bergerac (24100)</span>
-                </p>            
-            </div>
-        <h3>Stages</h3>
-            <div>
-                <p>
-                    <span class="date"> 2011 - 2014 : </span> 
-                    Stages de soins infirmiers<br> 
-                    <span class="precision">
-                        Chirurgie viscérale, Etablissement d'Hébergement pour Personnes Agées Dépendantes,
-                        Maternité, Libéral, Hopital de Jour de pédopsychiatrie, Structure Multiaccueil de 
-                        la petite enfance, Médecine pneumologie/rhumatologie, Soins de Suite et de Réadaptation. 
-                    </span> <br> 
-                    <span class="employeur">Etablissements sanitaires, sociaux, médicaux-sociaux, publics et privés.</span>
-                </p>  
-            </div>
-        <a class="haut" href="#Haut">Haut de page</a>
-
-    <a name="Comp_info"></a>
-    <h2>Compétences informatiques</h2>
-        <h3>Langages de programmation</h3>
-            <div>
-                <ul>
-                    <li>Shell Bash, Nzh</li>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>R</li>
-                    <li>LaTeX</li>
-                </ul>
-            </div>
-
-        <h3>Outils, environnements</h3>
-            <div>
-                <ul>
-                    <li>Systèmes d'exploitation : MacOS, Linux, Windows</li>
-                    <li>Editeurs de Texte : Visual Studio Code, Emacs, Sublime Text</li>
-                    <li>Traitement d'images : ImageJ</li>
-                    <li>Traitement de données : R-Studio</li>
-                    <li>Traitement de texte et tableurs : Microsoft Office, Libre Office</li>
-                </ul>
-            </div>
-        <a class="haut" href="#Haut">Haut de page</a>
-
-    <a name="Langues"></a>        
-    <h2>Langues</h2>
-        <div>
-            <img class="logoFr"
-                src="francais.png" 
-                alt="Drapeau Français"
-            />
-            <span  class="langue">Français : langue maternelle</span><br><br>
-            <img class="logoEn"
-                src="anglais.png" 
-                alt="Drapeau Anglais"
-            />
-            <span class="langue">Anglais : Niveau B2</span><br><br>
-            <img class="logoSp"
-                src="espagnol.png" 
-                alt="Drapeau Espagnol"
-            />
-            <span class="langue">Espagnol : Niveau A2</span><br><br>    
-        </div>
-        <a class="haut" href="#Haut">Haut de page</a>
-
-    <a name="Activites"></a>
-    <h2>Autres activités, aptitudes</h2>
-        <div>
-            <ul>
-                <li>Permis B</li>
-                <li>Vente à domicile : Parfumerie</li>
-                <li>Méditation</li>
-                <li>Loisirs : Cuisine, Lecture, Jeux Vidéo,</li>
-                <li>Sports : Marche, Pilates, Fitness</li>
-            </ul>
-        </div>
-        <a class="haut" href="#Haut">Haut de page</a>
-
-<div>
-<form>
-    <input class="impression" type="button" onclick="imprimer_page()" value="Imprimer le CV"/>
-</form>
-<script type="text/javascript">
-    function imprimer_page(){
-      window.print();
-    }
-</script>
-</div><br>
-
-<a name="Bas"></a>
-<footer>
-    <p>Code réalisé selon les recommandations et validé par W3C
-        <span class="dateW3C">le 20 Février 2020</span>
-    </p>
-    <p>
-        En ligne : <a href="https://validator.w3.org" target="blank">Site Web W3C</a>
-    </p>
-    <p>Tous droits réservés.</p>
-    
-</footer>
+    <script>
+        function aff_masq(division) {
+            var x = document.getElementById(division);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function imprimer_page(){
+            window.print();
+        }
+    </script>
 
 </body>
 </html>
