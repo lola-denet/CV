@@ -1,3 +1,43 @@
 .impression, header, footer, .haut, button, input{
     display : none;
 }
+
+body{
+    font-size: 50%;
+    background: none;
+}
+
+p, ul, .div_langue{
+    border:1px black solid;
+    border-radius: 20px;
+    box-shadow: 3px 3px 1px black;
+    background:none;
+    page-break-inside:avoid; 
+}
+
+.photo{
+    height:160px; 
+    width:115px;
+}
+
+h1{
+    font-size: 20pt;   
+}
+h2{
+    font-size: 16pt;
+}
+
+div h3{
+    font-size: 12pt;
+}
+.logoEn{
+    width: 17px;
+    height: 17px;
+}
+
+.logoSp, .logoFr{
+    width: 15px;
+    height: 15px;
+}
+
+
