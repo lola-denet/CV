@@ -3,7 +3,7 @@ body{
     width: 80%;
     margin: 0 auto;
     text-align: justify;
-    font-size:14pt;
+    font-size:12pt;
     background:linear-gradient(rgb(0, 128, 117),rgb(192, 247, 229),rgb(0, 128, 117)) 
 }
 
@@ -72,7 +72,7 @@ li .divers{
 input{
     display:block;
     text-align: center;
-    font-size:20pt;
+    font-size:16pt;
     margin-right: auto;
     margin-left:auto;
 }
@@ -96,8 +96,8 @@ button{
 
 .photo{
     display: block;
-    height:275px; 
-    width:200px;
+    height:255px; 
+    width:180px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10%;
@@ -105,15 +105,15 @@ button{
 
 .logoEn{
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     float: left;
 }
 
 .logoSp, .logoFr{
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     float: left; 
 }
 
