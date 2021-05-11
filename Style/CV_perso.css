@@ -26,7 +26,7 @@ footer{
 h1{
     text-align: center;
     color: green;
-    font-size: 26pt;
+    font-size: 22pt;
     text-decoration: underline;
     
 }
@@ -38,7 +38,7 @@ h2{
     padding-bottom: 1%;
     padding-top:1%;
     color: green;
-    font-size: 20pt;
+    font-size: 18pt;
     margin-bottom: 5%;
     margin-top:5%;
     clear: both;
@@ -72,7 +72,7 @@ li .divers{
 input{
     display:block;
     text-align: center;
-    font-size:16pt;
+    font-size:12pt;
     margin-right: auto;
     margin-left:auto;
 }
@@ -96,8 +96,8 @@ button{
 
 .photo{
     display: block;
-    height:255px; 
-    width:180px;
+    height:235px; 
+    width:160px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10%;
@@ -105,15 +105,15 @@ button{
 
 .logoEn{
     display: block;
-    width: 33px;
-    height: 33px;
+    width: 35px;
+    height: 35px;
     float: left;
 }
 
 .logoSp, .logoFr{
     display: block;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     float: left; 
 }
 
