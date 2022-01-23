@@ -4,17 +4,39 @@ body{
     margin: 0 auto;
     text-align: justify;
     font-size:12pt;
-    background:linear-gradient(rgb(0, 128, 117),rgb(192, 247, 229),rgb(0, 128, 117)) 
+    background:linear-gradient(rgb(0, 128, 117),rgb(164, 243, 217),rgb(0, 128, 117)) 
 }
 
-header{
-    text-align: center;
+#header{
+    text-align: right;
+    font-size: 11pt;
+    color: rgb(184, 245, 221);
+    width: 30%;
+    float: right;
+    margin-bottom:5%;
 }
 
-header h3{
-    font-size: 16pt;
+a.lien:link {
+    color: rgb(184, 245, 221);
+}
+
+a.lien:visited {
+    color: rgb(184, 245, 221);
+}
+
+a:visited{
+    color: rgb(3, 3, 179);
+}
+
+a:link{
+    color:  rgb(3, 3, 179);
+}
+
+#header h3{
+    font-size: 14pt;
     color: rgb(184, 245, 221);
     text-decoration: underline;
+    margin-top:20%;
 }
 
 footer{
@@ -23,12 +45,19 @@ footer{
     color:rgb(59, 59, 59);
 }
 
+h1#nom{
+    text-align: center;
+    color: rgb(184, 245, 221);
+    font-size: 50pt;   
+    margin-top:5%; 
+    font-weight: bold;
+    font-family: cursive;
+}
+
 h1{
     text-align: center;
-    color: green;
-    font-size: 22pt;
-    text-decoration: underline;
-    
+    color: rgb(14, 199, 14);
+    font-size: 26pt;    
 }
 h2{
     border-bottom-style: double;
@@ -47,7 +76,7 @@ h2{
 div h3{
     margin-left: 10%;
     font-size: 16pt;
-    color: rgb(80, 156, 80);
+    color: green;
     text-decoration: underline;
 }
 p, ul, .div_langue{
@@ -92,6 +121,13 @@ button{
     font-size: 10pt;
     margin-bottom: 2%;
     float: right;
+}
+
+#nom_photo{
+    width: 30%;
+    text-align: left;
+    float: left;
+    margin-top: 4%;
 }
 
 .photo{
@@ -155,15 +191,20 @@ button{
 }
 
 .telecharger{
-    font-weight: normal;
+    font-weight: bold;
+    font-size:10pt;
     border-style: solid;
     border-width: 1px;
     border-color: grey;
     border-radius:10px;
     background-color: white;
     padding: 0.5%;
-    margin-left: 45%;
+    margin-left: 20%;
     text-decoration: none;
-    color: black;
+    
     text-align: center;
+}
+
+#cv1, #cv2{
+    color: black;
 }

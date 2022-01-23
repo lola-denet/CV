@@ -14,21 +14,24 @@
 <body>
 
     <a id="Haut"></a>
-    <header>
+    
+    <div id="header">
         <h3>Accès Rapides : </h3>
-        <a href="#Info_perso">Informations personnelles et contact</a><br>
-        <a href="#Parcours_academique">Parcours académique</a><br>
-        <a href="#Exp_pro">Expériences professionnelles et stages</a><br>
-        <a href="#Comp_info">Compétences informatiques</a><br>
-        <a href="#Langues">Langues</a><br>
-        <a href="#Activites">Autres Activités, aptitudes</a><br>
-        <a href="#Bas">Bas de page</a>
-    </header><br><br>
+        <a class="lien" href="#Info_perso">Informations personnelles et contact</a><br>
+        <a class="lien" href="#Parcours_academique">Parcours académique</a><br> 
+        <a class="lien" href="#Exp_pro">Expériences professionnelles et stages</a><br> 
+        <a class="lien" href="#Comp_info">Compétences informatiques</a><br> 
+        <a class="lien" href="#Langues">Langues</a><br>
+        <a class="lien" href="#Activites">Autres Activités, aptitudes</a><br><br>
+        <a class="lien" href="#Bas">Bas de page</a>
+    </div>
+    
+    <div id="nom_photo">
+    <img class="photo" src="Images/Photo_LolaDenet.jpg" alt="Photo d'identité" />
 
-    <img class="photo" src="Images/Photo_LolaDenet.jpg" alt="Photo d'identité" /><br><br>
-
-    <h1>Lola Denet</h1>
-
+    </div>
+    <h1>Curriculum Vitae</h1>
+    <h1 id="nom">Lola Denet</h1>
     <a id="Info_perso"></a>
     <h2>Informations personnelles et contact
         <button onclick="aff_masq('div1')">+/-</button>
@@ -54,25 +57,24 @@
     <div id="div2">
         <p>
             <span class="date"> Depuis Septembre 2021 : </span>
-            <a href="" target="blank">
-                Master 2 Santé Publique
-            </a> <br>
+            Master 2 Santé Publique<br>
             <span class="precision">
                 Parcours : Systèmes d'Information et Technologies Informatiques pour la Santé (<a href="http://www.isped.u-bordeaux.fr/FORMATION/Masters-DUs-DIUs/Masters/Master-2-Systèmes-dinformation-et-technologies-informatiques-pour-la-santé"
                     target="blank">SITIS</a>). <br>
+                Année universitaire en cours.<br>
                 Formation effectuée en apprentissage avec l'entreprise Orion Health (plus de détails dans la section <a
-                    href="#Exp_pro">Expériences professionnelles et stages</a>).<br>
+                    href="#Exp_pro">Expériences professionnelles et stages</a>).<br><br>
                 Projets de développement dans les domaines suivants : gestion de bases de données (SQL/PHP),
                 programmation orientée objet (Java), intégration secondaire de données (SQL/PHP), indexation et fouille
-                de texte (Python), ontologie et terminologie (OWL/Logique de description), aide à la décision (R/IA).<br>
-                Projet de recherhe en sécurité informatique.<br>
+                de texte (Python), ontologie et terminologie (OWL/Logique de description), aide à la décision (R/IA).<br><br>
+                Projet de recherhe en sécurité informatique.<br><br>
                 Autres domaines étudiés : gestion de projet, épidémiologie, interopérabilité, systèmes d'information en
-                santé et pilotage, contraintes homme-machine en informatique de santé.<br>
-                Rôle de chef de projet occupé à plusieurs reprises. <br>
-                Année universitaire en cours.<br><br>
+                santé et pilotage, contraintes homme-machine en informatique de santé.<br><br>
+                Rôle de chef de projet occupé à plusieurs reprises. <br><br>
+
             </span>
             <span class="employeur">
-                <a href="https://www.u-bordeaux.fr" target="blank">Université de Bordeaux</a>
+                <a href="https://www.u-bordeaux.fr" target="blank">Université de Bordeaux</a> - 
                 <a href="http://www.isped.u-bordeaux.fr/ISPED/Qui-sommes-nous-" target="blank">Isped Bordeaux</a>
             </span>
         </p>
@@ -82,8 +84,8 @@
             Diplôme de
             <a href="https://master-bioinfo-bordeaux.github.io/?fbclid=IwAR106PSM_dQjaGU755saNukLNx0DxDwaeX8VTOcCqeQlJCefMVzYUzImYc4"
                 target="blank">
-                Master en Bio-Informatique, mention bien
-            </a> <br>
+                Master en Bio-Informatique
+            </a>, mention bien <br>
             <span class="precision">
                 Parcours : Biologie Computationnelle. <br>
                 Option M1 : Web Avancé et Modélisation des Processus Dynamiques. <br>
@@ -127,28 +129,18 @@
     </h2>
     <div id="div3">
         <h3>Emplois</h3>
-        <p>
-            <span class="date">Septembre 2021 - Septembre 2022 : </span><br>
-            Contrat d'apprentissage : Business Analyst<br>
-            <span class="precision">Apprentissage effectué dans le cadre du M2 SITIS. <br>
-                Missions : recueil et analyse des besoins client (GRADeS des ARS de France) concernant le développement
-                d'un systèmé d'information en santé, intermédiaire entre le client et l'équipe de développement,
-                participation au développement, contrôle de conformité...
-            </span>
-            <span class="employeur"><a href="https://orionhealth.com/global/" target="blank">Orion Health</a>,
-                Gradignan (33170)</span>
-        </p>
-
 
         <p>
             <span class="date">Août 2019 : </span><br>
             Infirmière DE vacataire<br>
+            <span class="contrat">Contrats à Durée Déterminée (vacations)</span>
             <span class="precision">Missions intérimaires dans des structures sanitaires et médico-sociales</span>
             <span class="employeur">Appel Médical, Périgueux (24000)</span>
         </p>
         <p>
             <span class="date">Janvier 2019 - Août 2019 : </span><br>
             Infirmière DE en Unité d'Hospitalisation pour Adolescent (UHA)<br>
+            <span class="contrat">Contrat à Durée Déterminée (fonction publique)</span>
             <span class="precision">Formation interne sur la prise en charge des psychopathologies</span> <br>
             <span class="employeur">Centre Hospitalier Spécialisé de Vauclaire, Bergerac (24100)</span>
         </p>
@@ -168,7 +160,19 @@
         </p>
 
 
-        <h3>Stages</h3>
+        <h3>Stages/Apprentissage</h3>
+        <p>
+            <span class="date">Septembre 2021 - Septembre 2022 : </span><br>
+            Contrat d'apprentissage : Business Analyst<br>
+            <span class="precision">Apprentissage effectué dans le cadre du M2 SITIS. <br>
+                Missions : recueil et analyse des besoins client (GRADeS des ARS de France) concernant le développement
+                d'un systèmé d'information en santé, intermédiaire entre le client et l'équipe de développement,
+                participation au développement, contrôle de conformité...
+            </span>
+            <span class="employeur"><a href="https://orionhealth.com/global/" target="blank">Orion Health</a>,
+                Gradignan (33170)</span>
+        </p>
+
         <p>
             <span class="date"> Février 2021 - Août 2021 : </span><br>
             Stage de M2 bio-informatique<br>
@@ -213,13 +217,13 @@
             <a href="https://hal.inria.fr/hal-03382314" target="blank">Lola Denet. Analyse de la motivation intrinsèque
                 au cours d’une activité de résolution de problèmes. [Rapport de recherche] RR-9430, Inria & Labri,
                 Université Bordeaux. 2021, pp.183</a><br><br>
-            </span>
+
 
             <span class="date">2020 : </span><br>
             <a href="https://hal.inria.fr/hal-02935633" target="blank">Lola Denet. Le dispositif Tabletop du projet
                 AIDE : développement de son interface utilisateur.
                 [Rapport Technique] RT-0508, Inria Bordeaux Sud-Ouest. 2020, pp.14. </a><br><br>
-            </span>
+
 
             <span class="date">2020 : </span><br>
             <a href="https://hal.inria.fr/hal-03040909" target="blank">Sabrina Barnabé, Lola Denet, Mathieu Manrique,
@@ -227,7 +231,7 @@
                 game to collect learning analytics during computational thinking using unplugged or tangible
                 activities. [Research Report] RR-9379, Inria. 2020. </a> <br><br>
 
-            <span class="date">2014</span><br><br>
+            <span class="date">2014</span><br>
             Lola Denet. Harmonisation des pratiques professionnelles – Prendre soin du nouveau-né et de ses parents par
             le biais de pratiques soignantes.
             [Mémoire de Fin d’Études], IFSI Vil-leneuve-sur-Lot. 2014. (non disponible en ligne)
@@ -285,7 +289,7 @@
         <span class="langue">Anglais : Niveau B2</span><br><br>
         <img class="logoSp" src="Images/espagnol.png" alt="Drapeau Espagnol" />
         <span class="langue">Espagnol : Niveau A2</span><br><br>
-    </div>
+    </div><br>
     <a class="haut" href="#Haut">Haut de page</a>
 
     <a id="Activites"></a>
@@ -304,10 +308,11 @@
     <div>
         <form>
             <!--<input class="impression" type="button" onclick="imprimer_page()" value="Imprimer le CV"/>-->
-            <a class="telecharger" href="./CV_LolaDENET.pdf" target="blank" download="CV_LolaDENET.pdf">Télécharger le
+            <a class="telecharger" id="cv1" href="./CV_LolaDENET.pdf" target="blank" download="CV_LolaDENET.pdf">Télécharger le
                 CV synthétisé (1 page)</a>
-                <a class="telecharger" href="./CV_LolaDENET_complet.pdf" target="blank" download="CV_LolaDENET_complet.pdf">Télécharger le
-                    CV détaillé (3 pages)</a>
+            <a class="telecharger" id="cv2" href="./CV_LolaDENET_complet.pdf" target="blank" download="CV_LolaDENET_complet.pdf">Télécharger
+                le
+                CV détaillé (3 pages)</a>
         </form>
     </div><br>
 
@@ -317,7 +322,7 @@
     <footer>
         <div>
             Code réalisé selon les recommandations et validé par W3C,
-            <span class="dateW3C">le 11 Mai 2021</span><br>
+            <span class="dateW3C">le 23 Janvier 2022</span><br>
             En ligne : <a href="https://validator.w3.org" target="blank">Site Web W3C</a><br>
             Tous droits réservés.<br><br>
             <form class="contact">
